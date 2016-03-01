@@ -7,7 +7,7 @@ def solve(wire_string)
   wires = wire_string.split("")
   case wires.length
   when 3
-    if wires.include?("r")
+    if wires.include?("r") == false
       puts "CUT THE SECOND WIRE"
     elsif wires.last == "w"
       puts "CUT THE LAST WIRE"
