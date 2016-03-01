@@ -1,3 +1,6 @@
+# require 'require_all'
+# require_all 'solvers'
+
 def prompt_user
   puts "Select a panel."
   puts "0. SERIAL/BATTERY/INDICATOR/PORT CHECK"
@@ -15,21 +18,35 @@ def prompt_user
   puts "12. Knobs"
   run_selected_solver(gets.chomp)
 end
+
 def run_selected_solver(selection)
   case selection
   when '0'
+    load('./solvers/check.rb')
   when '1'
+    load('./solvers/wires.rb')
   when '2'
+    load('./solvers/button.rb')
   when '3'
+    load('./solvers/keypads.rb')
   when '4'
+    load('./solvers/simon_says.rb')
   when '5'
+    load('./solvers/whos_on_first.rb')
   when '6'
+    load('./solvers/memory.rb')
   when '7'
+    load('./solvers/morse_code.rb')
   when '8'
+    load('./solvers/complicated_wires.rb')
   when '9'
+    load('./solvers/wire_sequences.rb')
   when '10'
+    load('./solvers/mazes.rb')
   when '11'
+    load('./solvers/passwords.rb')
   when '12'
+    load('./solvers/knobs.rb')
   else
     prompt_user
   end
