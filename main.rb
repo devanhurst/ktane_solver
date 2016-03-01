@@ -1,6 +1,7 @@
 require_relative 'bomb'
 
 def main_menu
+  system "clear" or system "cls"
   puts "Welcome to KTANE AI. Let's defuse some bombs!"
   puts "Enter 'n' to begin a new game."
   puts "Enter 'q' to quit."
@@ -12,9 +13,11 @@ def main_menu
   when 'q'
     exit
   else
+    puts "Invalid input."
+    sleep 0.5
+
     main_menu
   end
 end
 
-system "clear" or system "cls"
 main_menu

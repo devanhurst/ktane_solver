@@ -51,5 +51,5 @@ def run_selected_solver(selection)
     prompt_user
   end
 end
-
+system "clear" or system "cls"
 prompt_user
