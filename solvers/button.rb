@@ -33,7 +33,7 @@ def solve(word, colour)
     if @bomb.indicator_frk == true
       press_button
     end
-  elsif @bomb.indicator_fro == true && @bomb.battery_count > 2
+  elsif @bomb.indicator_frk == true && @bomb.battery_count > 2
     press_button
   end
 
