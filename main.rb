@@ -1,6 +1,3 @@
-# require 'require_all'
-# require_all 'solvers'
-
 def prompt_user
   puts "Select a panel."
   puts "0. SERIAL/BATTERY/INDICATOR/PORT CHECK"
