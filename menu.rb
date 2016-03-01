@@ -1,4 +1,5 @@
 def prompt_user
+  system "clear" or system "cls"
   puts "Select a panel."
   puts "0. SERIAL/BATTERY/INDICATOR/PORT CHECK"
   puts "1. Wires"
@@ -51,5 +52,5 @@ def run_selected_solver(selection)
     prompt_user
   end
 end
-system "clear" or system "cls"
+
 prompt_user
