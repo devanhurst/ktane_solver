@@ -3,8 +3,8 @@
           '6', 'paragraph', 'p', 'smiley', 'trident', 'c', 'blackstar', 'snake',
           'hash', 'ae', 'n', 'omega']
 
-@solutions = [['q','a','lambda','lightning','alien','h','c'],
-              ['e','q','c','curly','whitestar','h','question'],
+@solutions = [['q','a','lambda','lightning','alien','h','backwards c'],
+              ['e','q','backwards c','curly','whitestar','h','question'],
               ['copyright','butt','curly','i','r','lambda','whitestar'],
               ['6','paragraph','p','alien','i','question','smiley'],
               ['trident','smiley','p','c','paragraph','snake','blackstar'],
