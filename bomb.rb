@@ -6,6 +6,7 @@ class Bomb
   attr_accessor :indicator_car
   attr_accessor :indicator_frk
   attr_accessor :parallel_port
+  attr_accessor :strikes
 
   def initialize
     @vowel = nil
@@ -14,6 +15,7 @@ class Bomb
     @indicator_car = nil
     @indicator_frk = nil
     @parallel_port = nil
+    @strikes = 0
   end
 
   def vowel_check

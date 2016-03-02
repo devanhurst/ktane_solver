@@ -77,15 +77,9 @@ end
 
 def hold_button
   puts "HOLD THE BUTTON."
-  puts "What colour is the stripe?"
-  stripe = gets.chomp
-  if stripe == "b"
-    puts "RELEASE WHEN THE TIMER HAS A 4"
-  elsif stripe == "y"
-    puts "RELEASE WHEN THE TIMER HAS A 5"
-  else
-    puts "RELEASE WHEN THE TIMER HAS A 1"
-  end
+  puts "If blue: RELEASE WHEN THE TIMER HAS A 4"
+  puts "If yellow: RELEASE WHEN THE TIMER HAS A 5"
+  puts "Otherwise: RELEASE WHEN THE TIMER HAS A 1"
   @bomb.back_to_menu
 end
 
