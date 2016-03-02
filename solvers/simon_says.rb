@@ -1,4 +1,5 @@
 def solve(sequence)
+  system "clear" or system "cls"
   if sequence == "X"
     @bomb.strikes += 1
     puts "STRIKE ADDED"
