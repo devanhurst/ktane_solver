@@ -1,6 +1,6 @@
 def prompt_user
   system "clear" or system "cls"
-  puts "Select a panel."
+  puts "Select a panel. Enter 'X' at any time to add a strike."
   puts "0. SERIAL/BATTERY/INDICATOR/PORT CHECK"
   puts "1. Wires"
   puts "2. Button"
@@ -48,6 +48,10 @@ def run_selected_solver(selection)
     load('./solvers/knobs.rb')
   when '13'
     load('./main.rb')
+  when 'X'
+    @bomb.strike_added?('X')
+    sleep(1)
+    prompt_user
   else
     prompt_user
   end

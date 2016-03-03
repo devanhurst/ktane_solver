@@ -7,7 +7,7 @@ require 'pry'
 def solve(response)
   if response == "q"
     @bomb.back_to_menu
-  elsif response == "r"
+  elsif response == "r" || @bomb.strike_added?(response)
     system "clear" or system "cls"
     @round = 1
     puts "MODULE RESET"

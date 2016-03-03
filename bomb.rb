@@ -96,6 +96,17 @@ class Bomb
     end
   end
 
+  def strike_added?(text_input)
+    if text_input == 'X'
+      @strikes += 1
+      puts "STRIKE ADDED. STRIKES: " + @strikes.to_s
+      sleep(1)
+      return true
+    else
+      return false
+    end
+  end
+
   def back_to_menu
     puts "Press enter to return to menu."
     if gets.chomp == ""

@@ -50,7 +50,13 @@ end
 
 def prompt_user
   word = prompt_for_word
+  if @bomb.strike_added?(word)
+    prompt_user 
+  end
   colour = prompt_for_colour
+  if @bomb.strike_added?(colour)
+    prompt_user
+  end
   solve(word, colour)
 end
 
