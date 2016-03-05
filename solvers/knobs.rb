@@ -4,7 +4,7 @@ def solve(input)
     puts "Knob position: UP"
   when 'dbbdnb', 'udunud'
     puts "Knob position: DOWN"
-  when 'dnndbd', 'nnndbd'
+  when 'dnndbd', 'nnndbn'
     puts "Knob position: LEFT"
   when 'bdbubu', 'bdbudn'
     puts "Knob position: RIGHT"

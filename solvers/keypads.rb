@@ -42,6 +42,7 @@ def prompt_user
   puts "SYMBOL LIST"
   symbols = []
   @choices.each {|choice| puts choice}
+  puts "'quit' to exit"
   count = 1
   while count < 5
     print "Symbol " + count.to_s + ": "
@@ -50,6 +51,9 @@ def prompt_user
         puts "MODULE RESET"
         sleep(1)
         prompt_user
+      end
+      if symbol == 'quit'
+        @bomb.back_to_menu
       end
       while @choices.include?(symbol) == false || symbols.include?(symbol)
         puts "Invalid choice. Try again."
